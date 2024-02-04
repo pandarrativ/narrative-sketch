@@ -1,0 +1,41 @@
+@import '../../App.scss';
+
+.incubation-board-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  height: 270px;
+  margin-top: $boardPadding;
+  background-color: #fff;
+  .incubation-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 4px solid #d9d9d9;
+  }
+  .showimg {
+    margin-top: 10px;
+    width: 1100px;
+    height: 140px;
+    border: 2px solid #d9d9d9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .showimg-img {
+      width: 135px;
+      height: 135px;
+    }
+  }
+  .slider {
+    width: 1000px;
+    margin-left: 50px;
+  }
+  .input {
+    width: 200px;
+  }
+}

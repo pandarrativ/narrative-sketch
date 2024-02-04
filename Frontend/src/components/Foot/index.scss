@@ -1,0 +1,28 @@
+.bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  .bottom-box {
+    width: 236px;
+    height: 120px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+  }
+  .bottom-box-selected {
+    color: #e6c2e2;
+  }
+  .bottom-box-clickable {
+    color: #1890ff;
+    cursor: pointer;
+  }
+}

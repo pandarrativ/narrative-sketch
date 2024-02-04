@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Inder';
+  src: local('Inder'), url(./assets/fonts/Inder-Regular.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+$windowWidth: 1180px;
+$windowHeight: 700px;
+$boardLeftWidth: 300px;
+$boardTopHeight: 350px;
+$boardPadding: 10px;
+$borderRadius: 5px;
+$topBarHeight: 40px;
+
+$boardTopWidth: $windowWidth - 2 * $boardPadding;
+$boardBottomWidth: $boardTopWidth;
+$boardBottomHeight: $windowHeight - $topBarHeight - 3 * $boardPadding - $boardTopHeight;
+
+$backgroundGradient: linear-gradient(
+  45deg,
+  rgba(231, 194, 226, 1),
+  rgba(175, 180, 208, 1),
+  rgba(49, 150, 168, 1)
+);
+$backgroundColor: #f2f2f2;
+
+.app {
+  width: $windowWidth;
+  height: $windowHeight;
+  background-color: $backgroundColor;
+  font-family: 'Inder', Consolas;
+}

@@ -1,0 +1,51 @@
+@import '../../App.scss';
+div#AIDisplay {
+  .img {
+    $imgRatio: 0.9;
+    margin: (1 - $imgRatio) / 2 * $boardLeftWidth (1 - $imgRatio) / 2 * $boardLeftWidth;
+    width: 0.9 * $boardLeftWidth;
+    height: 0.9 * $boardLeftWidth;
+    user-select: none;
+  }
+  .controller {
+    $controllerHeight: 32px;
+    display: flex;
+    width: 100%;
+    height: $controllerHeight;
+    padding: 0 20px;
+    justify-content: space-around;
+    button {
+      padding: 0;
+    }
+    button#add,
+    button#minus {
+      width: $controllerHeight;
+      height: $controllerHeight;
+      span {
+        font-size: 20pt;
+        line-height: 0.85 * $controllerHeight;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    // button#add {
+    //   color: #40a9ff;
+    // }
+    // button#minus {
+    //   color: #fcbebd;
+    // }
+    button#clear {
+      width: $controllerHeight * 3;
+      height: $controllerHeight;
+    }
+  }
+}
+
+.change-img {
+  width: 295px;
+  height: 100%;
+}
+
+.change-img-com {
+  width: 150px;
+}

@@ -1,0 +1,21 @@
+@import '../../App.scss';
+.timeline {
+  width: 100%;
+  height: 100%;
+  svg {
+    .timeline-node {
+      circle {
+        fill: $backgroundColor;
+      }
+    }
+  }
+  .timeline-placeholder {
+    font-size: 100px;
+    text-align: center;
+    line-height: $boardBottomHeight;
+    vertical-align: middle;
+    margin: 0;
+    color: #ccc;
+    user-select: none;
+  }
+}

@@ -1,0 +1,169 @@
+@import '../../App.scss';
+
+.container {
+  width: $windowWidth;
+  height: $windowHeight;
+  position: absolute;
+  overflow: hidden;
+  .top {
+    position: absolute;
+    width: 100%;
+    height: $topBarHeight;
+    background-image: $backgroundGradient;
+    #StorySketch-label {
+      height: $topBarHeight;
+      padding: 0 10px 0 10px;
+      margin: 0;
+      line-height: $topBarHeight;
+      display: inline-block;
+    }
+    .top-box {
+      height: $topBarHeight * 0.8;
+      width: $topBarHeight * 0.8;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0.1 * $topBarHeight 3px;
+      border-radius: 0.5 * $topBarHeight;
+      user-select: none;
+      img {
+        height: 0.5 * $topBarHeight;
+        width: 0.5 * $topBarHeight;
+        margin: 0.15 * $topBarHeight;
+      }
+      background-color: white;
+    }
+    .top-box-selected {
+      background-color: white;
+    }
+    .label1 {
+      display: inline;
+      margin-right: 5px;
+      visibility: hidden;
+      margin-top: 2px;
+      opacity: 0;
+    }
+    .label2 {
+      position: absolute;
+      left: 50%;
+      transform: translate(-190px, 0);
+      top: -10px;
+      color: #e768ca;
+      font-size: 32px;
+      font-weight: 700;
+      height: 40px;
+      width: 420px;
+      text-align: center;
+    }
+    .ant-btn-primary {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // width: 155px;
+      // height: 40px;
+      // font-size: 24px;
+      // font-weight: 700;
+      // border-radius: 19px;
+      // background-image: $backgroundGradient;
+      // border: none;
+    }
+    .store-btn {
+      float: right;
+      // width: 80px;
+    }
+  }
+
+  .board {
+    margin-top: $topBarHeight;
+    width: 100%;
+    height: $windowHeight - $topBarHeight;
+    padding: $boardPadding;
+    .board-top {
+      height: $boardTopHeight;
+      .board-left-1 {
+        // margin-left: 130px;
+        width: 100%;
+        height: $windowHeight - $topBarHeight - 20;
+        padding: $boardPadding;
+        // border: 1px solid #000;
+        border-radius: $borderRadius;
+        background-color: #fff;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+      }
+      .board-left-2 {
+        width: $boardLeftWidth;
+        height: 100%;
+        // border: 1px solid #000;
+        border-radius: $borderRadius;
+        background-color: #fff;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+      }
+      .board-right {
+        width: $windowWidth - 2 * $boardPadding - $boardLeftWidth - $boardPadding;
+        margin-left: $boardPadding;
+        height: 100%;
+        display: inline-block;
+        background-color: #fff;
+        vertical-align: top;
+      }
+      .board-right-end {
+        width: $windowWidth - 2 * $boardPadding - $boardLeftWidth - $boardPadding;
+        margin-left: $boardPadding + 0.5 * $boardLeftWidth;
+        height: 100%;
+        display: inline-block;
+        background-color: #fff;
+        vertical-align: top;
+      }
+    }
+    .board-bottom {
+      width: $boardBottomWidth;
+      height: $boardBottomHeight;
+      margin-top: $boardPadding;
+      position: relative;
+      .drawer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: $borderRadius;
+        overflow: hidden;
+        .ant-drawer {
+          height: 100%;
+          position: absolute;
+          z-index: 10;
+          .btn.complete {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #8cd246;
+            border: 0;
+            $btnSize: 24px;
+            height: $btnSize;
+            width: $btnSize;
+            padding: 0;
+            min-width: unset;
+          }
+        }
+        .btn.maximize {
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          left: 5px;
+          bottom: 5px;
+          box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+        }
+      }
+      #timeline {
+        position: absolute;
+      }
+    }
+  }
+  // .board.board-prepartion {
+  //   border-radius: 46px;
+  //   background-color: #fff;
+  // }
+}

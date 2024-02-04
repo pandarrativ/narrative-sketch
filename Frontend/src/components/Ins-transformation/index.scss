@@ -1,0 +1,92 @@
+$topHeight: 40px;
+@import '../../App.scss';
+
+.transformation-board-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  height: 270px;
+  margin-top: $boardPadding;
+  background-color: #fff;
+  .transformation-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 4px solid #d9d9d9;
+  }
+  .transformation-changeway {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 190px;
+    .changeway-left {
+      width: 220px;
+      height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .switch {
+        width: 100px;
+        color: #000;
+        margin-top: 5px;
+      }
+      .input {
+        width: 215px;
+        height: 30px;
+        margin-top: 5px;
+        background-image: $backgroundGradient;
+        border-radius: 5px;
+        color: #000;
+        text-align: center;
+      }
+      .input::-webkit-input-placeholder {
+        color: #fff;
+      }
+      .type {
+        width: 100px;
+        height: 30px;
+        background-image: $backgroundGradient;
+        border-radius: 5px;
+      }
+    }
+    .changeway-right {
+      width: 870px;
+      height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .description {
+        font-size: 17px;
+        height: 33px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        .name {
+          color: #3196a8;
+        }
+      }
+      .showimg {
+        width: 870px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .showimg-img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .slider {
+        width: 750px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../App.scss';
+
+$arrowSize: 40px;
+
+.combination {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  .combination-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 4px solid #d9d9d9;
+  }
+  .combination-bottom {
+    height: 100%;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    .step.picture {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .comimg {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #000;
+        margin-left: 10px;
+      }
+      .chosen {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #4285f4;
+        margin-left: 10px;
+      }
+    }
+  }
+  .step {
+    width: ($boardBottomWidth - 2 * $arrowSize) / 2;
+    height: 100%;
+    display: inline-block;
+    .ego-network {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .arrow {
+    display: inline-block;
+    height: 100%;
+    font-size: $arrowSize;
+    vertical-align: top;
+    line-height: $boardBottomHeight;
+  }
+}

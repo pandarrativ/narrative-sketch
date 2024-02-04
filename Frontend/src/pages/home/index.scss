@@ -1,0 +1,62 @@
+@import '../../App.scss';
+
+.page {
+  width: $windowWidth;
+  height: $windowHeight;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e5e5e5;
+  .top_info {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Inter;
+  }
+  .background_img {
+    display: flex;
+    justify-content: center;
+    width: 11800;
+    height: 700px;
+    background-size: contain;
+    background-image: url(../../assets/images/home-background.png);
+    background-repeat: no-repeat;
+    .description {
+      position: relative;
+      top: 100px;
+      left: 100px;
+      width: 900px;
+      height: 210px;
+      font-size: 50px;
+      text-align: center;
+      line-height: 200%;
+      font-family: Inter;
+    }
+    .link {
+      position: relative;
+      top: 325px;
+      right: 450px;
+      height: 50px;
+      .ant-btn-primary {
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+        border-radius: 19px;
+        font-weight: bold;
+        white-space: nowrap;
+        color: #fff;
+        border: none;
+        background-image: $backgroundGradient;
+      }
+      .ant-btn-primary:hover {
+        border: 2px solid rgba(49, 150, 168, 1);
+      }
+    }
+  }
+}
